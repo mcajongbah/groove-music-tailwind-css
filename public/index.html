@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <title>Groove Music UI</title>
+    <style>
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid grid-cols-6 width-full h-screen">
+      <div class="bg-gray-400 col-span-1 h-full">
+        <!-- <Sidebar /> -->
+        <div class="px-5 h-5/6 flex justify-between flex-col">
+          <div class="text-lg flex space-y-6 flex-col">
+            <h5 class="pt-6 font-bold">Groove Music</h5>
+            <span>
+              <i class="fas fa-bars"></i>
+            </span>
+            <div>
+              <input
+                type="text"
+                class="px-4 h-8 bg-gray-300"
+                placeholder="Search"
+              />
+            </div>
+            <div>
+              <i class="fas fa-music"></i>
+              <span>My Music</span>
+            </div>
+            <div>
+              <i class="far fa-clock"></i>
+              <span>Recent Plays</span>
+            </div>
+            <div>
+              <i class="far fa-chart-bar"></i>
+              <span>Now Playing</span>
+            </div>
+          </div>
+          <div class="flex justify-between border-t border-gray-800 py-4">
+            <div class="flex flex-row justify-center">
+              <img
+                src="../src/images/avatar.svg"
+                alt="profile"
+                class="w-6 h-6 rounded-xl"
+              />
+              <p class="text-lg pl-4 font-semibold">John Doe</p>
+            </div>
+            <span><i class="fas fa-cog"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white col-span-5 h-full box-border px-8 overflow-y-auto">
+        <!-- Main Area -->
+        <h3 class="text-3xl pt-10">My Music</h3>
+        <div class="flex flex-row border-b space-x-10 mt-5 text-xl font-light">
+          <span>Songs</span>
+          <span class="border-b-2 border-blue-500">Artists</span>
+          <span>Albums</span>
+        </div>
+        <div class="flex flex-row space-x-10 mt-5 text-normal font-light">
+          <span>
+            <i class="fas fa-random"></i>
+            Shuffle All (234)
+          </span>
+          <span>Sort by: A to Z</span>
+        </div>
+        <div class="grid grid-cols-9 mt-12">
+          <span class="col-span-9 mb-8 text-3xl font-thin">#</span>
+          <div class="flex flex-col items-center justify-center mb-16">
+            <img
+              src="../src/images/avatar.svg"
+              alt="profile"
+              class="w-32 h-32 rounded-full"
+            />
+            <span class="text-xl font-normal">21 Savage</span>
+          </div>
+          <div class="flex flex-col items-center justify-center mb-16">
+            <img
+              src="../src/images/avatar.svg"
+              alt="profile"
+              class="w-32 h-32 rounded-full"
+            />
+            <span class="text-xl font-normal">6lack</span>
+          </div>
+
+          <span class="col-span-9 mb-8 text-3xl font-thin">A</span>
+          <div class="flex flex-col items-center justify-center mb-16">
+            <img
+              src="../src/images/avatar.svg"
+              alt="profile"
+              class="w-32 h-32 rounded-full"
+            />
+            <span class="text-xl font-normal">Adele</span>
+          </div>
+          <div class="flex flex-col items-center justify-center mb-16">
+            <img
+              src="../src/images/avatar.svg"
+              alt="profile"
+              class="w-32 h-32 rounded-full"
+            />
+            <span class="text-xl font-normal">Alessia Cara</span>
+          </div>
+          <div class="flex flex-col items-center justify-center mb-16">
+            <img
+              src="../src/images/avatar.svg"
+              alt="profile"
+              class="w-32 h-32 rounded-full"
+            />
+            <span class="text-xl font-normal">Aloe Blacc</span>
+          </div>
+          <div class="flex flex-col items-center justify-center mb-16">
+            <img
+              src="../src/images/avatar.svg"
+              alt="profile"
+              class="w-32 h-32 rounded-full"
+            />
+            <span class="text-xl font-normal">Ariana Grande</span>
+          </div>
+          <div class="flex flex-col items-center justify-center mb-16">
+            <img
+              src="../src/images/avatar.svg"
+              alt="profile"
+              class="w-32 h-32 rounded-full"
+            />
+            <span class="text-xl font-normal">August Alsina</span>
+          </div>
+
+          <span class="col-span-9 mb-8 text-3xl font-thin">B</span>
+          <div class="flex flex-col items-center justify-center mb-16">
+            <img
+              src="../src/images/avatar.svg"
+              alt="profile"
+              class="w-32 h-32 rounded-full"
+            />
+            <span class="text-xl font-normal">Bazzi</span>
+          </div>
+          <div class="flex flex-col items-center justify-center mb-16">
+            <img
+              src="../src/images/avatar.svg"
+              alt="profile"
+              class="w-32 h-32 rounded-full"
+            />
+            <span class="text-xl font-normal">Beyonce</span>
+          </div>
+          <div class="flex flex-col items-center justify-center mb-16">
+            <img
+              src="../src/images/avatar.svg"
+              alt="profile"
+              class="w-32 h-32 rounded-full"
+            />
+            <span class="text-xl font-normal">Big Sean</span>
+          </div>
+          
+          <div class="flex flex-col items-center justify-center mb-16">
+            <img
+              src="../src/images/avatar.svg"
+              alt="profile"
+              class="w-32 h-32 rounded-full"
+            />
+            <span class="text-xl font-normal">Bellie Eilish</span>
+          </div>
+          <div class="flex flex-col items-center justify-center mb-16">
+            <img
+              src="../src/images/avatar.svg"
+              alt="profile"
+              class="w-32 h-32 rounded-full"
+            />
+            <span class="text-xl font-normal">Bruno Mars</span>
+          </div>
+          <div class="flex flex-col items-center justify-center mb-16">
+            <img
+              src="../src/images/avatar.svg"
+              alt="profile"
+              class="w-32 h-32 rounded-full"
+            />
+            <span class="text-xl font-normal">Burna Boy</span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full flex justify-between col-span-6 h-20 fixed bottom-0 bg-yellow-800 bg-opacity-90"
+      >
+        <!-- Controls -->
+        <div class="flex flex-row">
+          <img src="../src/images/album.jpg" alt="profile" class="w-20 h-20" />
+          <div class="flex flex-col justify-center text-white pl-10">
+            <span class="font-thin">RRR (Real Recognize Real)</span>
+            <span>August Alsina</span>
+          </div>
+        </div>
+        <div
+          class="text-white font-light text-xl flex flex-col items-center justify-center"
+        >
+          <div class="flex flex-row space-x-6">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-backward"></i>
+            <i class="far fa-play-circle"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="fas fa-redo"></i>
+          </div>
+          <div class="flex flex-row items-center pt-4">
+            <div class="text-xs text-white">1:20</div>
+            <div class="bg-white rounded-lg w-96 h-1 ml-3"></div>
+            <div class="ml-3 text-xs text-white">3:21</div>
+          </div>
+        </div>
+        <div
+          class="text-white font-light text-xl flex items-center pr-8 space-x-6"
+        >
+          <i class="fas fa-volume-up"></i>
+          <div class="bg-white rounded-lg w-20 h-1 ml-3"></div>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
